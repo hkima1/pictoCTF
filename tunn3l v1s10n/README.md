@@ -1,5 +1,4 @@
-AS mentionned in https://en.wikipedia.org/wiki/BMP_file_format
-The first 2 bytes of the BMP file format are the character "B" then the character "M" in ASCII encoding that make us knowing the type of the file or with exiftool
+First we should  detect the file format  we can do this by visualising the hex representaion of the file (where  AS mentionned in https://en.wikipedia.org/wiki/BMP_file_format The first 2 bytes of the BMP file format are the character "B" then the character "M" in ASCII encoding that make us knowing the type of the file ) or with exiftool. Since we detect it as bmp file we should rename it with it's extension 
 So the bmp file contain three main components : 
 The header of bmp image is composed by to party :
   - Bitmap file header : containing 14 bytes where the last 4 bytes indicate the begining of the pixel array data 
